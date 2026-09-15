@@ -1,12 +1,12 @@
-user: '<user name>'
-case: '<case name>'
-nick: '<case nickname>'
-case_base: '<baseline case>'
-nick_base: '<baseline nickname>'
+user: susando
+case: n1850GaxgGHG.LM.n30b24.516.20260909 #simulering man kjører
+nick: test #hvis man vil ha et kortere navn
+case_base: '<baseline case>' #kontroll-simulering
+nick_base: '<baseline nickname>' #hvis man vil ha et kortere navn
 
 # basic diagnostic info
 diag_basic_info:
-    compare_obs: false
+    compare_obs: true
     global_mean_ts_full_range: true 
     obs_source: "ERA5_1deg"      # match an obs_name; omit to use each variable's default
     create_html: true
@@ -18,7 +18,7 @@ diag_basic_info:
     cam_se_grid: ne16
     cam_se_weight_file_ne16: /nird/datalake/NS9560K/diagnostics/land_xesmf_diag_data/map_ne16pg3_to_1.9x2.5_nomask_scripgrids_c250425.nc
     cam_se_weight_file_ne30: /nird/datalake/NS9560K/diagnostics/land_xesmf_diag_data/map_ne30pg3_to_1x1d_aave.nc
-    cam_diag_plot_loc: /nird/datalake/NS9560K/www/diagnostics/noresm/${user}/${case}/ADF
+    cam_diag_plot_loc: /nird/datalake/NS12127K/www/diagnostics/noresm/${user}/${case}/ADF
     plot_press_levels: [200,500,850]
     central_longitude: 180
     num_procs: 8
@@ -33,8 +33,8 @@ diag_cam_climo:
     case_nickname: ${nick}
     cam_hist_loc: /nird/datalake/NS9560K/noresm3/cases/${diag_cam_climo.cam_case_name}/atm/hist
     cam_climo_loc: /scratch/${user}/noresm3/ADF/${diag_cam_climo.cam_case_name}/atm/proc/climo
-    start_year: <fill this in>
-    end_year: <fill this in>
+    start_year: 1430 # spesifiser selv
+    end_year: 1460 # spesifiser selv
     cam_ts_done: false
     cam_ts_save: true
     cam_overwrite_ts: false
@@ -53,8 +53,8 @@ diag_cam_baseline_climo:
     case_nickname: ${nick_base}
     cam_hist_loc: /nird/datalake/NS9560K/noresm3/cases/${diag_cam_baseline_climo.cam_case_name}/atm/hist
     cam_climo_loc: /scratch/${user}/noresm3/ADF/${diag_cam_baseline_climo.cam_case_name}/atm/proc/climo
-    start_year: <fill this in>
-    end_year: <fill this in>
+    start_year: <fill this in> # spesifiser selv
+    end_year: <fill this in> # spesifiser selv
     cam_ts_done: false
     cam_ts_save: false
     cam_overwrite_ts: false
@@ -91,10 +91,10 @@ analysis_scripts:
 plotting_scripts:
     - global_mean_timeseries
     - global_latlon_map
-    - zonal_mean
-    - meridional_mean
-    - cam_taylor_diagram
-    - bandpass_map        # NEW: storm-track maps
+#    - zonal_mean
+#    - meridional_mean
+#    - cam_taylor_diagram
+#    - bandpass_map        # NEW: storm-track maps
   # - global_latlon_vect_map
   # - polar_map
   # - qbo
