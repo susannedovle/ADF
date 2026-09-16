@@ -1,12 +1,12 @@
-user: '<user name>'
-case: '<case name>'
-nick: '<case nickname>'
+user: susando
+case: n1850GaxgGHG.LM.n30b24.516.20260909
+nick: test
 case_base: '<baseline case>'
 nick_base: '<baseline nickname>'
 
 # basic diagnostic info
 diag_basic_info:
-    compare_obs: false
+    compare_obs: true
     global_mean_ts_full_range: true 
     obs_source: "ERA5_1deg"      # match an obs_name; omit to use each variable's default
     create_html: true
@@ -33,8 +33,8 @@ diag_cam_climo:
     case_nickname: ${nick}
     cam_hist_loc: /nird/datalake/NS9560K/noresm3/cases/${diag_cam_climo.cam_case_name}/atm/hist
     cam_climo_loc: /scratch/${user}/noresm3/ADF/${diag_cam_climo.cam_case_name}/atm/proc/climo
-    start_year: <fill this in>
-    end_year: <fill this in>
+    start_year: 1430 #spesifiser år
+    end_year: 1460 #spesifiser år
     cam_ts_done: false
     cam_ts_save: true
     cam_overwrite_ts: false

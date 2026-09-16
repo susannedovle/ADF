@@ -44,9 +44,9 @@ from cartopy.util import add_cyclic_point
 from mpl_toolkits.axes_grid1.inset_locator import inset_axes
 from matplotlib.lines import Line2D
 
-from adf_base import AdfError
-import plotting_utils as plot_utils
-import adf_utils as utils
+from ADF.lib.adf_base import AdfError
+import ADF.lib.plotting_utils as plot_utils
+import ADF.lib.adf_utils as utils
 
 #Format warning messages:
 import warnings  # use to warn user about missing files.

@@ -22,8 +22,8 @@ _ADF_LIB_DIR = os.path.join(_CURRDIR, os.pardir, os.pardir)
 sys.path.append(_ADF_LIB_DIR)
 
 #Import AdfBase class
-from adf_base import AdfBase
-from adf_base import AdfError
+from ADF.lib.adf_base import AdfBase
+from ADF.lib.adf_base import AdfError
 
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 #Main AdfBase testing routine, used when script is run directly

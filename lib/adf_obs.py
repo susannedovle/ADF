@@ -39,7 +39,7 @@ from pathlib import Path
 import yaml
 
 #ADF modules:
-from adf_info import AdfInfo
+from ADF.lib.adf_info import AdfInfo
 
 #+++++++++++++++++++
 #Define Obs class

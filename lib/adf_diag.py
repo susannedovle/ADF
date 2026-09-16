@@ -95,9 +95,9 @@ for root, dirs, files in os.walk(_DIAG_SCRIPTS_PATH):
 # +++++++++++++++++++++++++++++
 
 # Finally, import needed ADF modules:
-from adf_web import AdfWeb
-from adf_dataset import AdfData
-from adf_derive import check_derive, derive_variable
+from ADF.lib.adf_web import AdfWeb
+from ADF.lib.adf_dataset import AdfData
+from ADF.lib.adf_derive import check_derive, derive_variable
 
 #################
 # Helper functions
@@ -777,7 +777,7 @@ class AdfDiag(AdfWeb):
                     # so a serial loop is fast enough here.
                     # (xr is imported at module scope; do NOT re-import it here
                     #  or it becomes function-local and shadows the global.)
-                    from adf_se_regrid import make_se_regridder, regrid_cam_se_data
+                    from ADF.lib.adf_se_regrid import make_se_regridder, regrid_cam_se_data
                     regridder = None
                     for ts_file in ts_output_files:
                         if not os.path.isfile(ts_file):

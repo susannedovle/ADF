@@ -3,7 +3,7 @@ import os
 from pathlib import Path
 import xarray as xr
 
-from adf_formula import safe_eval
+from ADF.lib.adf_formula import safe_eval
 
 
 def check_derive(self, res, var, case_name, diag_var_list, constit_dict, hist_file_ds, hist0):

@@ -17,7 +17,7 @@ import numpy as np
 
 # Import local modules:
 import plotting_functions as pf
-from aod_latlon import aod_latlon 
+from ADF.scripts.plotting.aod_latlon import aod_latlon 
 import adf_utils as utils
 import plotting_utils as plot_utils
 import plotting_functions as pf

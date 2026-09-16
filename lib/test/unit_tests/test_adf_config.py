@@ -21,8 +21,8 @@ _TEST_FILES_DIR = os.path.join(_CURRDIR, "test_files")
 sys.path.append(_ADF_LIB_DIR)
 
 #Import AdfConfig class and AdfError
-from adf_config import AdfConfig
-from adf_base import AdfError
+from ADF.lib.adf_config import AdfConfig
+from ADF.lib.adf_base import AdfError
 
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 #Main AdfBase testing routine, used when script is run directly

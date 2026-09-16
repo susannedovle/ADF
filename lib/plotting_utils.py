@@ -33,8 +33,8 @@ import matplotlib as mpl
 import matplotlib.cm as cm
 import cartopy.crs as ccrs
 
-from adf_diag import AdfDiag
-import adf_utils as utils
+from ADF.lib.adf_diag import AdfDiag
+import ADF.lib.adf_utils as utils
 
 import warnings  # use to warn user about missing files.
 warnings.formatwarning = utils.my_formatwarning

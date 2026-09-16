@@ -27,7 +27,7 @@ import subprocess
 #+++++++++++++++++++++++++++++++++++++++++++++++++
 
 import yaml
-from adf_base import AdfBase
+from ADF.lib.adf_base import AdfBase
 
 #+++++++++++++++++++
 #Define config class

@@ -44,8 +44,8 @@ import xarray as xr
 # pylint: enable=unused-import
 
 #ADF modules:
-from adf_config import AdfConfig
-from adf_base   import AdfError
+from ADF.lib.adf_config import AdfConfig
+from ADF.lib.adf_base   import AdfError
 
 #+++++++++++++++++++
 #Define Obs class

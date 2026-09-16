@@ -24,7 +24,7 @@ np = pytest.importorskip("numpy")
 xr = pytest.importorskip("xarray")
 
 #Import the module under test:
-from adf_formula import safe_eval
+from ADF.lib.adf_formula import safe_eval
 
 
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

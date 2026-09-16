@@ -31,7 +31,7 @@ from pathlib import Path
 import markdown
 
 #ADF modules:
-from adf_obs import AdfObs
+from ADF.lib.adf_obs import AdfObs
 
 #Try to import Pandas.  If not available
 #then simply notify website generator that

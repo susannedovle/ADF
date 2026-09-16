@@ -4,8 +4,8 @@ from pathlib import Path
 
 import xarray as xr
 
-import adf_utils as utils
-from adf_formula import safe_eval
+import ADF.lib.adf_utils as utils
+from ADF.lib.adf_formula import safe_eval
 warnings.formatwarning = utils.my_formatwarning
 
 # "reference data"

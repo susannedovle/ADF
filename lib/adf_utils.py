@@ -47,7 +47,7 @@ import xarray as xr
 import pandas as pd
 import geocat.comp as gcomp
 
-from adf_base import AdfError
+from ADF.lib.adf_base import AdfError
 
 import warnings  # use to warn user about missing files.
 
