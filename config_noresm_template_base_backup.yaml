@@ -55,7 +55,7 @@ diag_cam_baseline_climo:
     cam_case_name: ${case_base}
     case_nickname: ${nick_base}
     #cam_hist_loc: /nird/datalake/NS9560K/noresm3/cases/${diag_cam_baseline_climo.cam_case_name}/atm/hist
-    cam_hist_loc: /nird/datapeak/NS12127K/susando/cases/${diag_cam_climo.cam_case_name}/atm/hist 
+    cam_hist_loc: /nird/datapeak/NS12127K/susando/cases/${diag_cam_baseline_climo.cam_case_name}/atm/hist 
     cam_climo_loc: /scratch/${user}/noresm3/ADF/${diag_cam_baseline_climo.cam_case_name}/atm/proc/climo
     start_year: 1 #spesifiser år
     end_year: 10 #spesifiser år
@@ -111,38 +111,38 @@ plotting_scripts:
 
 # variables to diagnose and plot
 diag_var_list:
-    # - AODVIS
-    # - mmr_BC
-    # - mmr_DUST
-    # - mmr_OM
-    # - mmr_SALT
-    # - mmr_SULFATE
+    - AODVIS
+    - mmr_BC
+    - mmr_DUST
+    - mmr_OM
+    - mmr_SALT
+    - mmr_SULFATE
   # - D550_BC
   # - D550_DU
   # - D550_POM
   # - D550_SO4
   # - D550_SS
-    # - cb_SULFATE
-    # - cb_isoprene
-    # - cb_monoterp
-    # - cb_DUST
-    # - cb_DMS
-    # - cb_BC
-    # - cb_OM
-    # - cb_H2O2
-    # - cb_H2SO4
-    # - cb_SALT
-    # - cb_SO2
-    # - SFmonoterp
-    # - SFisoprene
-    # - SFSS
-    # - SFSO4
-    # - SFSO2_net
-    # - SFOM
-    # - SFBC
-    # - SFDMS
-    # - SFH2O2
-    # - SFH2SO4
+    - cb_SULFATE
+    - cb_isoprene
+    - cb_monoterp
+    - cb_DUST
+    - cb_DMS
+    - cb_BC
+    - cb_OM
+    - cb_H2O2
+    - cb_H2SO4
+    - cb_SALT
+    - cb_SO2
+    - SFmonoterp
+    - SFisoprene
+    - SFSS
+    - SFSO4
+    - SFSO2_net
+    - SFOM
+    - SFBC
+    - SFDMS
+    - SFH2O2
+    - SFH2SO4
     - CLDHGH
     - CLDICE
     - CLDLIQ
@@ -190,6 +190,7 @@ diag_var_list:
     - LANDFRAC
     - ALBEDO
     - ALBEDOC
+    - TMCO2
 
 # <Add more variables here.>
 
