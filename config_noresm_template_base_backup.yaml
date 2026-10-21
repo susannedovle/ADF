@@ -1,7 +1,7 @@
 user: susando
 case: n1850Gaxg.LM.nor30b25.527.abrupt4xCO2.20261007   # 4xCO2 
 #case: n1850Gaxg.LM.nor30b25.527.Arctic.abrupt4xCO2.20261007 #for Arctic
-#case: n1850Gaxg.LM.nor30b25.527.Tropics.abrupt4xCO2.20261015
+#case: n1850Gaxg.LM.nor30b25.527.Tropics.abrupt4xCO2.20261015 #for Tropics
 nick: abrupt4xCO2
 case_base: n1850Gaxg.LM.nor30b25.527.pictrl.20261007
 nick_base: picontrol
@@ -40,7 +40,7 @@ diag_cam_climo:
     end_year: 10 #spesifiser år
     cam_ts_done: false
     cam_ts_save: true
-    cam_overwrite_ts: false
+    cam_overwrite_ts: true
     cam_ts_loc: /scratch/${user}/noresm3/ADF/${diag_cam_climo.cam_case_name}/atm/proc/tseries
     tem_hist_str: cam.h4
     cam_tem_loc: /scratch/${user}/noresm3/ADF/${diag_cam_climo.cam_case_name}/tem/
@@ -61,7 +61,7 @@ diag_cam_baseline_climo:
     end_year: 10 #spesifiser år
     cam_ts_done: false
     cam_ts_save: false
-    cam_overwrite_ts: false
+    cam_overwrite_ts: true
     cam_ts_loc: /scratch/${user}/noresm3/ADF/${diag_cam_baseline_climo.cam_case_name}/atm/proc/tseries
     tem_hist_str: cam.h4
     cam_tem_loc: /scratch/${user}/noresm3/ADF/${diag_cam_baseline_climo.cam_case_name}/tem/
@@ -111,12 +111,12 @@ plotting_scripts:
 
 # variables to diagnose and plot
 diag_var_list:
-    - AODVIS
-    - mmr_BC
-    - mmr_DUST
-    - mmr_OM
-    - mmr_SALT
-    - mmr_SULFATE
+    # - AODVIS
+    # - mmr_BC
+    # - mmr_DUST
+    # - mmr_OM
+    # - mmr_SALT
+    # - mmr_SULFATE
   # - D550_BC
   # - D550_DU
   # - D550_POM
@@ -133,16 +133,16 @@ diag_var_list:
     - cb_H2SO4
     - cb_SALT
     - cb_SO2
-    - SFmonoterp
-    - SFisoprene
-    - SFSS
-    - SFSO4
-    - SFSO2_net
-    - SFOM
-    - SFBC
-    - SFDMS
-    - SFH2O2
-    - SFH2SO4
+    # - SFmonoterp
+    # - SFisoprene
+    # - SFSS
+    # - SFSO4
+    # - SFSO2_net
+    # - SFOM
+    # - SFBC
+    # - SFDMS
+    # - SFH2O2
+    # - SFH2SO4
     - CLDHGH
     - CLDICE
     - CLDLIQ
@@ -176,8 +176,8 @@ diag_var_list:
     - SHFLX
     - SWCF
     - T
-    - TAUX
-    - TAUY
+    # - TAUX
+    # - TAUY
     - TGCLDIWP
     - TGCLDLWP
     - TMQ
@@ -187,10 +187,11 @@ diag_var_list:
     - U10
     - ICEFRAC
     - OCNFRAC
-    # - LANDFRAC
-    # - ALBEDO
-    # - ALBEDOC
-    # - TMCO2
+    - LANDFRAC
+    - ALBEDO
+    - ALBEDOC
+    - TMCO2
+    - Q
 
 
 # <Add more variables here.>
