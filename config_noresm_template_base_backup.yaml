@@ -187,10 +187,11 @@ diag_var_list:
     - U10
     - ICEFRAC
     - OCNFRAC
-    - LANDFRAC
-    - ALBEDO
-    - ALBEDOC
-    - TMCO2
+    # - LANDFRAC
+    # - ALBEDO
+    # - ALBEDOC
+    # - TMCO2
+
 
 # <Add more variables here.>
 
