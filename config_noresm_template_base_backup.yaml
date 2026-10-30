@@ -1,14 +1,15 @@
 user: susando
-case: n1850Gaxg.LM.nor30b25.527.abrupt4xCO2.20261007   # 4xCO2 
+#case: n1850Gaxg.LM.nor30b25.527.abrupt4xCO2.20261007   # 4xCO2 
+case: n1850Gaxg.LM.nor30b27.002.pictrl.20261021
 #case: n1850Gaxg.LM.nor30b25.527.Arctic.abrupt4xCO2.20261007 #for Arctic
 #case: n1850Gaxg.LM.nor30b25.527.Tropics.abrupt4xCO2.20261015 #for Tropics
-nick: abrupt4xCO2
+nick: piControl
 case_base: n1850Gaxg.LM.nor30b25.527.pictrl.20261007
 nick_base: picontrol
 
 # basic diagnostic info
 diag_basic_info:
-    compare_obs: false
+    compare_obs: true
     global_mean_ts_full_range: true 
     obs_source: "ERA5_1deg"      # match an obs_name; omit to use each variable's default
     create_html: true
@@ -37,7 +38,7 @@ diag_cam_climo:
     cam_hist_loc: /nird/datapeak/NS12127K/susando/cases/${diag_cam_climo.cam_case_name}/atm/hist
     cam_climo_loc: /scratch/${user}/noresm3/ADF/${diag_cam_climo.cam_case_name}/atm/proc/climo
     start_year: 1 #spesifiser år
-    end_year: 10 #spesifiser år
+    end_year: 40 #spesifiser år
     cam_ts_done: false
     cam_ts_save: true
     cam_overwrite_ts: true
@@ -46,6 +47,7 @@ diag_cam_climo:
     cam_tem_loc: /scratch/${user}/noresm3/ADF/${diag_cam_climo.cam_case_name}/tem/
     overwrite_tem: false
     bandpass_hist_str: cam.h1a      # NEW: daily stream containing Z500
+
 
 # info for baseline compare if not comparing to observations
 diag_cam_baseline_climo:
@@ -58,7 +60,7 @@ diag_cam_baseline_climo:
     cam_hist_loc: /nird/datapeak/NS12127K/susando/cases/${diag_cam_baseline_climo.cam_case_name}/atm/hist 
     cam_climo_loc: /scratch/${user}/noresm3/ADF/${diag_cam_baseline_climo.cam_case_name}/atm/proc/climo
     start_year: 1 #spesifiser år
-    end_year: 10 #spesifiser år
+    end_year: 20 #spesifiser år
     cam_ts_done: false
     cam_ts_save: false
     cam_overwrite_ts: true
@@ -100,7 +102,7 @@ plotting_scripts:
     - cam_taylor_diagram
     - bandpass_map        # NEW: storm-track maps
    # - global_latlon_vect_map
-    - polar_map
+  #  - polar_map
   # - qbo
   # - ozone_diagnostics
   # - enso_comparison_plots
